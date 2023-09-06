@@ -26,9 +26,9 @@ public class L2E3 {
         Double subtotal = (itemPrice1 + itemPrice2 + itemPrice3);
 
         System.out.println("Receipt: ");
-        System.out.format("%s, £%.2f", itemName1, itemPrice1);
-        System.out.format("\n%s, £%.2f", itemName2, itemPrice2);
-        System.out.format("\n%s, £%.2f", itemName3, itemPrice3);
+        System.out.format("%s  £%.2f", itemName1,  itemPrice1);
+        System.out.format("\n%s  £%.2f", itemName2,  itemPrice2);
+        System.out.format("\n%s  £%.2f", itemName3,  itemPrice3);
         System.out.format("\nSUBTOTAL: £%.2f", subtotal);
 
     }
