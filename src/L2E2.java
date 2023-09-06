@@ -5,12 +5,15 @@ public class L2E2 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter first number: ");
-        int a = input.nextInt();
+        float a = input.nextFloat();
         System.out.print("Enter second number: ");
-        int b = input.nextInt();
+        float b = input.nextFloat();
 
-        int result = a * b;
-
-        System.out.println(result);
+        System.out.println(a + " + " +  b + " = " + (a + b));
+        System.out.println(a + " - " +  b + " = " + (a - b));
+        System.out.println(a + " * " +  b + " = " + (a * b));
+        System.out.println(a + " / " +  b + " = " + (a / b));
+        System.out.println(a + " % " +  b + " = " + (a % b));
+        System.out.println(a + " to the power of " +  b + " = " + (Math.pow(a,b)));
     }
 }
