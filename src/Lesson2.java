@@ -15,6 +15,10 @@ public class Lesson2
         System.out.println(hobby + " provides " + name + " with a lot of joy and a way to be creative");
         System.out.println(hobby + " is a great pastime that is used by people all over the world.");
 
+        System.out.format("%s loves %s in their free time. ", name, hobby);
+        System.out.format("%s provides %s with a lot of joy and a way to be creative. ", hobby, name);
+        System.out.format("%s is a great pastime that is used by people all over the world.", hobby);
+
         //int a = 2;
         //int b = 5;
 
