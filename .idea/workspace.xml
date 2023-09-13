@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba3bf3b4-4a3a-4fc0-a6f4-171fb2780ebc" name="Changes" comment="Hello World">
+    <list default="true" id="ba3bf3b4-4a3a-4fc0-a6f4-171fb2780ebc" name="Changes" comment="update exercise 3">
+      <change afterPath="$PROJECT_DIR$/src/L3E1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L3E2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L3E3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,20 +35,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/30044429/IdeaProjects/J68V47/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/30044429/IdeaProjects/J68V47/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="J68V47-Classwork" />
@@ -64,7 +74,10 @@
       <updated>1693401602083</updated>
       <workItem from="1693401603249" duration="2000" />
       <workItem from="1693401740903" duration="53000" />
-      <workItem from="1693401803132" duration="4162000" />
+      <workItem from="1693401803132" duration="4276000" />
+      <workItem from="1694001276717" duration="624000" />
+      <workItem from="1694001940695" duration="9613000" />
+      <workItem from="1694605118777" duration="7780000" />
     </task>
     <task id="LOCAL-00001" summary="Hello World">
       <option name="closed" value="true" />
@@ -74,7 +87,63 @@
       <option name="project" value="LOCAL" />
       <updated>1693403984102</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Hello World">
+      <option name="closed" value="true" />
+      <created>1693406083547</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693406083547</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Anagrams and Haiku">
+      <option name="closed" value="true" />
+      <created>1694005836477</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694005836477</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Anagrams and Haiku">
+      <option name="closed" value="true" />
+      <created>1694009712164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694009712164</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Anagrams and Haiku">
+      <option name="closed" value="true" />
+      <created>1694010883722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694010883722</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update exercise 1">
+      <option name="closed" value="true" />
+      <created>1694011620221</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694011620221</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update exercise 3">
+      <option name="closed" value="true" />
+      <created>1694011673173</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694011673173</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update exercise 3">
+      <option name="closed" value="true" />
+      <created>1694012210013</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694012210013</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +161,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hello World" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hello World" />
+    <MESSAGE value="Lesson 2 upload" />
+    <MESSAGE value="Finished Lesson 2" />
+    <MESSAGE value="update exercise 1" />
+    <MESSAGE value="update exercise 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update exercise 3" />
   </component>
 </project>
