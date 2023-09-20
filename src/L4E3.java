@@ -13,7 +13,7 @@ public class L4E3 {
             System.out.println("Shipping cost is £10 for orders under £50");
             totalAmount = totalAmount + 10;
 
-            System.out.println("Your updated cost is " + totalAmount);
+            System.out.println("Your updated cost is £" + totalAmount);
         }
 
     }
