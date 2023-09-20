@@ -28,6 +28,8 @@ public class L4E1 {
 
         if (depositAmount > 100) {
             System.out.println("You get a free toaster!");
+        } else {
+            System.out.println("Enjoy your mug");
         }
         System.out.println("Have a nice day");
     }
