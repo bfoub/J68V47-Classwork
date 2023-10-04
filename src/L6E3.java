@@ -4,8 +4,9 @@ public class L6E3 {
         Scanner input = new Scanner(System.in);
 
         int lives = 3;
+        int questions = 10;
 
-        while (lives > 0)
+        while (questions != 0 && lives != 0)
         {
             System.out.println("What is 10 + 10? ");
             int userInput = input.nextInt();
@@ -18,6 +19,7 @@ public class L6E3 {
                 System.out.println("Incorrect, You lost a life");
                 lives--;
             }
+            questions--;
         }
 
         if (lives == 0)
@@ -30,4 +32,3 @@ public class L6E3 {
 
         }
     }
-}
