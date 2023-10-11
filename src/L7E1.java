@@ -27,8 +27,8 @@ public class L7E1 {
         int option = input.nextInt();
         return option;
     }
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         int option = -1;
         while (option != 4) {
             showMenu();
