@@ -5,8 +5,8 @@ public class L7E2 {
         int num = x + y;
         return num;
     }
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
@@ -17,5 +17,4 @@ public class L7E2 {
 
         System.out.format("The sum of %d and %d is %d", num1, num2, calculateSum(num1, num2));
     }
-
 }
