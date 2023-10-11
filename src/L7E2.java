@@ -15,7 +15,7 @@ public class L7E2 {
         System.out.print("Enter the second number: ");
         int num2 = input.nextInt();
 
-        System.out.println(calculateSum(num1, num2));
+        System.out.format("The sum of %d and %d is %d", num1, num2, calculateSum(num1, num2));
     }
 
 }
