@@ -56,6 +56,8 @@ public class app {
                 PrintWriter pw = new PrintWriter(fw);
                 pw.print("\n" + user);
                 pw.close();
+
+                System.out.println("Successfully created user, " + username + " " + password);
             }
              
             catch (Exception e) {
@@ -109,6 +111,8 @@ public class app {
             sitePassword = PasswordMaker.generatePassword();
         }
         else if (passwordChoice == 2) {
+            scanner.nextLine();
+            System.out.print("Enter Custom Password: ");
             sitePassword = scanner.nextLine();
         }
 
@@ -124,22 +128,88 @@ public class app {
             }
     }
 
+    public static void deletePassword(String username) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a site name you want to delete: ");
+        String siteDelete = scanner.nextLine();
+
+        List<String> tempSites = new ArrayList<>();
+
+        try {
+            Scanner currentSites = new Scanner(new FileReader("PROJECT2/Users/"+ username + ".txt"));
+            while(currentSites.hasNextLine()) {
+                tempSites.add(currentSites.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        for (int i = 0; i < tempSites.size(); i++) {
+            String selectedSite = tempSites.get(i);
+            
+            if (selectedSite == "") {
+                tempSites.remove(i);
+            }
+        }
+
+        for (int i = 0; i < tempSites.size(); i++) {
+                    String selectedSite = tempSites.get(i);
+                    
+                    if (selectedSite.contains(siteDelete)) {
+                        tempSites.remove(i);
+                        System.out.println("- - - FOUND AND REMOVED WEBSITE '" + siteDelete + "'");
+                    }
+                }
+        
+        //Delete contents from old text file
+        try{
+            FileWriter fw = new FileWriter("PROJECT2/Users/"+ username + ".txt");
+            PrintWriter pw = new PrintWriter(fw);
+            pw.println("");
+            pw.close();
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        
+        //Replace text file with the temporary sites from list, if you typed a site name it will now not be included when added back in
+        for (int i = 0; i < tempSites.size(); i++) {
+            try{
+                FileWriter fw = new FileWriter("PROJECT2/Users/"+ username + ".txt", true);
+                PrintWriter pw = new PrintWriter(fw);
+                pw.println(tempSites.get(i));
+                pw.close();
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+                }
+    }
+
     public static void userChoices(String username) {
         Scanner scanner = new Scanner(System.in);
         int userInput = 1;
 
         while (userInput != 0) {
-        System.out.println("\n\nUSER CHOICE MENU\nDisplay your passwords[1], Make a new password[2], Main Menu[0]");
-        userInput = scanner.nextInt();
-
+        System.out.println("\n\nUSER CHOICE MENU\nDisplay your passwords[1], Make a new password[2], Delete a password[3], Main Menu[0]");
+        
+        try{
+        userInput = Integer.parseInt(scanner.nextLine());
+            
         if (userInput == 1) {
             displayPasswords(username);
         }
         else if (userInput == 2) {
             makePassword(username);
         }
+        else if (userInput == 3) {
+            deletePassword(username);;
+        }
+        } catch (Exception e) {
+            System.out.println("Please enter a valid input.");
+        }
         }
     }
+    
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -147,14 +217,21 @@ public class app {
 
         while (userInput != 0) {
         System.out.println("\nMAIN MENU\nLogin to account[1], Register account[2], Exit[0]");
-        userInput = scanner.nextInt();
 
-        if (userInput == 1) {
-            login();
+        try{
+        userInput = Integer.parseInt(scanner.nextLine());
+
+            if (userInput == 1) {
+                login();
+            }
+            else if (userInput == 2) {
+                register();
+            }
+
+        } catch (Exception e) {
+            System.out.println("Please enter a valid input");
         }
-        else if (userInput == 2) {
-            register();
-        }
+
         }
     }
 
